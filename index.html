@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+
+<link href="./Bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body> 
+<div style="text-align: center;">
+<h1>Média do Enem:</h1><br><br>
+<div style="background-color:rgb(191, 245, 245); padding-top: 30px; margin-left: 500px; margin-right: 500px; border-radius: 4%;">
+<input style="width: 280px; padding: 7px; margin-block: 5px" id="pri" type="number" name="número" placeholder="Matemática"><br>
+<input style="width: 280px; padding: 7px; margin-block: 5px" id="seg" type="number" name="número" placeholder="Português"><br>
+<input style="width: 280px; padding: 7px; margin-block: 5px" id="ter" type="number" name="número" placeholder="Ciências humanas"><br>
+<input style="width: 280px; padding: 7px; margin-block: 5px" id="qua" type="number" name="número" placeholder="Ciências da Natureza"><br>
+<input style="width: 280px; padding: 7px; margin-block: 5px;" id="qui" type="number" name="número" placeholder="Linguagens"><br>
+<input style="width: 280px; padding: 7px; margin-block: 5px;" id="sex" type="number" name="número" placeholder="Redação"><br><br>
+</div><br>
+<button style="width: 190px;" type="button" class="btn btn-primary p-2" onclick="valor()">Resultado</button><br><br>
+<div id="res" class="display-5"></div>
+</div>
+<script>
+function valor(){
+
+let a = document.getElementById('pri');
+let b = document.getElementById('seg');
+let c = document.getElementById('ter');
+let d = document.getElementById('qua');
+let e = document.getElementById('qui');
+let f = document.getElementById('sex');
+
+let r  = (Number(a.value) + Number(b.value) + Number(c.value) + Number(d.value) + Number(e.value) + Number(f.value)) / 6;
+    
+document.getElementById('res').innerHTML = r;
+
+
+}
+
+
+
+
+
+
+
+</script>
+ 
+
+</body>
+</html>
